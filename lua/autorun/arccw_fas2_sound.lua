@@ -143,6 +143,132 @@ sound.Add({
 	sound = {"weapons/arccw_mifl/fas2/m82/harrisbipod_up1.wav","weapons/arccw_mifl/fas2/m82/harrisbipod_up2.wav"}
 })
 
+//SKS
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.LatchOpen",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_latchopen.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.LatchClose",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_latchclose.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltBack",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltback.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltBackLock",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltback_lock.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.ClipIn",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_clipin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.Insert1",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_insert1.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.Insert2",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_insert2.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.InsertLast",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_insertlast.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.RemoveClip",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_removeclip.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltRelease",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltrelease.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltForward",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltforward.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltBackHalfA",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltback_half_a.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltBackHalfB",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltback_half_b.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.BoltForwardHalf",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_boltforward_half.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.InsertNomen",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_insert_nomen.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.MagOut",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.MagOutEmpty",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SKS.MagIn",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sks/sks_magin.wav"}
+})
 
 //R44
 sound.Add({

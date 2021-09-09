@@ -1,37 +1,43 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\rifles\sks.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_flas_sks.mdl"
+$include "fesiug.qci"
+$scale 2
 
-$bodygroup "weapon"
+$bodygroup "Weapon"
 {
-	studio "ref.smd"
+	studio "Main.smd"
 }
-$bodygroup "Hands"
+$bodygroup "Frame"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "Frame.smd"
+	studio "Frame_Kurz.smd"
+}
+$bodygroup "top"
+{
+	studio "Top.smd"
+	blank
 }
 $bodygroup "Sights"
 {
 	blank
-	studio "ref_aimpoint.smd"
-	studio "ref_eotech.smd"
-	studio "ref_pso.smd"
+	studio "Rail.smd"
 }
 $bodygroup "Barrel"
 {
-	studio "ref_barrel.smd"
-	studio "ref_bayonet.smd"
-	studio "ref_suppressor.smd"
-	studio "ref_grenade.smd"
+	studio "Barrel.smd"
+	studio "Barrel_Kurz.smd"
+	studio "Barrel_Long.smd"
+	studio "Barrel_Ginata.smd"
+	blank
 }
 $bodygroup "Magazine"
 {
-	studio "ref_mag10.smd"
-	studio "ref_mag20.smd"
-	studio "ref_mag30.smd"
+	studio "Mag_10.smd"
+	studio "Strip_20.smd"
+	studio "Mag_20.smd"
+	studio "Mag_30.smd"
 }
-
 
 $surfaceprop "default"
 
@@ -41,7 +47,6 @@ $illumposition -2.755 -46.156 -6.898
 
 $cdmaterials "models\weapons\view\rifles\sks\"
 $cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\view\hands\"
 $cdmaterials "models\weapons\shells\"
 
 $attachment "muzzle" "Dummy01" 19.5 0.7 0 rotate 0 0 0
@@ -354,17 +359,17 @@ $sequence "Reload_empty" {
 	{ event AE_FAS_EJECT_BRASS 86 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 7 "Generic.Magpouch" }
-	{ event 5004 24 "Weapon_SKS.ClipIn" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 24 "Generic.Cloth_Movement" }
-	{ event 5004 39 "Weapon_SKS.Insert1" }
+	{ event 5004 39 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 39 "Generic.Cloth_Movement" }
-	{ event 5004 54 "Weapon_SKS.Insert2" }
-	{ event 5004 66 "Weapon_SKS.InsertLast" }
+	{ event 5004 54 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 66 "Generic.Cloth_Movement" }
-	{ event 5004 82 "Weapon_SKS.RemoveClip" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 82 "Generic.Cloth_Movement" }
-	{ event 5004 94 "Weapon_SKS.BoltRelease" }
-	{ event 5004 99 "Weapon_SKS.BoltForward" }
+	{ event 5004 94 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 99 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 94 "Generic.Cloth_Movement" }
 	{ event 3018 102 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -378,21 +383,21 @@ $sequence "Reload1" {
 	{ event AE_FAS_EJECT_BRASS 19 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 101 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.BoltBack" }
-	{ event 5004 18 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
 	{ event 5004 30 "Generic.Magpouch" }
-	{ event 5004 40 "Weapon_SKS.ClipIn" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 40 "Generic.Cloth_Movement" }
-	{ event 5004 56 "Weapon_SKS.Insert1" }
+	{ event 5004 56 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 56 "Generic.Cloth_Movement" }
-	{ event 5004 69 "Weapon_SKS.Insert2" }
-	{ event 5004 82 "Weapon_SKS.InsertLast" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 82 "Generic.Cloth_Movement" }
-	{ event 5004 98 "Weapon_SKS.RemoveClip" }
+	{ event 5004 98 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 98 "Generic.Cloth_Movement" }
-	{ event 5004 110 "Weapon_SKS.BoltRelease" }
-	{ event 5004 115 "Weapon_SKS.BoltForward" }
+	{ event 5004 110 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 115 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 110 "Generic.Cloth_Movement" }
 	{ event 3018 118 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -408,24 +413,24 @@ $sequence "Reload2" {
 	{ event AE_FAS_EJECT_BRASS 34 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 116 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_SKS.BoltBack" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 10 "Generic.Cloth_Movement" }
-	{ event 5004 17 "Weapon_SKS.BoltForward" }
-	{ event 5004 26 "Weapon_SKS.BoltBack" }
-	{ event 5004 33 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 17 "Arccw_FAS2_Weapon_SKS.BoltForward" }
+	{ event 5004 26 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 33 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 26 "Generic.Cloth_Movement" }
 	{ event 5004 40 "Generic.Magpouch" }
-	{ event 5004 55 "Weapon_SKS.ClipIn" }
+	{ event 5004 55 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 55 "Generic.Cloth_Movement" }
-	{ event 5004 71 "Weapon_SKS.Insert1" }
+	{ event 5004 71 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 71 "Generic.Cloth_Movement" }
-	{ event 5004 85 "Weapon_SKS.Insert2" }
-	{ event 5004 97 "Weapon_SKS.InsertLast" }
+	{ event 5004 85 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 97 "Generic.Cloth_Movement" }
-	{ event 5004 113 "Weapon_SKS.RemoveClip" }
+	{ event 5004 113 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 113 "Generic.Cloth_Movement" }
-	{ event 5004 125 "Weapon_SKS.BoltRelease" }
-	{ event 5004 130 "Weapon_SKS.BoltForward" }
+	{ event 5004 125 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 130 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 125 "Generic.Cloth_Movement" }
 	{ event 3018 133 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -442,24 +447,24 @@ $sequence "Reload3" {
 	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
+	{ event 5004 34 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 63 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 70 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 63 "Generic.Cloth_Movement" }
 	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
+	{ event 5004 93 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
+	{ event 5004 109 "Arccw_FAS2_Weapon_SKS.Insert1" }
+	{ event 5004 124 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 136 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
+	{ event 5004 153 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
+	{ event 5004 164 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 169 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 164 "Generic.Cloth_Movement" }
 	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -469,34 +474,22 @@ $sequence "Reload3" {
 }
 
 $sequence "Reload4" {
-	"sks_anims\Reload4.smd"
+	"sks_anims\ReloadNew4.smd"
 	activity "ACT_VM_RELOAD4" 1
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
-	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
-	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 63 "Generic.Cloth_Movement" }
-	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
-	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
-	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
-	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
-	{ event 5004 164 "Generic.Cloth_Movement" }
-	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Generic.Cloth_Movement" }
+	{ event 5004 27 "Generic.Magpouch" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.InsertLast" }
+	{ event 5004 61 "Generic.Cloth_Movement" }
+	{ event 5004 81 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 81 "Generic.Cloth_Movement" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 91 "Generic.Cloth_Movement" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -504,35 +497,22 @@ $sequence "Reload4" {
 }
 
 $sequence "Reload5" {
-	"sks_anims\Reload5.smd"
+	"sks_anims\ReloadNew5.smd"
 	activity "ACT_VM_RELOAD5" 1
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
-	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
-	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 63 "Generic.Cloth_Movement" }
-	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
-	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
-	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
-	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
-	{ event 5004 164 "Generic.Cloth_Movement" }
-	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Generic.Cloth_Movement" }
+	{ event 5004 27 "Generic.Magpouch" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.InsertLast" }
+	{ event 5004 61 "Generic.Cloth_Movement" }
+	{ event 5004 81 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 81 "Generic.Cloth_Movement" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 91 "Generic.Cloth_Movement" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -540,36 +520,23 @@ $sequence "Reload5" {
 }
 
 $sequence "Reload6" {
-	"sks_anims\Reload6.smd"
+	"sks_anims\ReloadNew6.smd"
 	activity "ACT_VM_RELOAD6" 1
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 21 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
-	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
-	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 63 "Generic.Cloth_Movement" }
-	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
-	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
-	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
-	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
-	{ event 5004 164 "Generic.Cloth_Movement" }
-	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Generic.Cloth_Movement" }
+	{ event 5004 27 "Generic.Magpouch" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 73 "Arccw_FAS2_Weapon_SKS.InsertLast" }
+	{ event 5004 73 "Generic.Cloth_Movement" }
+	{ event 5004 89 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 89 "Generic.Cloth_Movement" }
+	{ event 5004 101 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 101 "Generic.Cloth_Movement" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -577,37 +544,23 @@ $sequence "Reload6" {
 }
 
 $sequence "Reload7" {
-	"sks_anims\Reload7.smd"
+	"sks_anims\ReloadNew7.smd"
 	activity "ACT_VM_RELOAD7" 1
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 21 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 21 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
-	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
-	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 63 "Generic.Cloth_Movement" }
-	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
-	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
-	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
-	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
-	{ event 5004 164 "Generic.Cloth_Movement" }
-	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Generic.Cloth_Movement" }
+	{ event 5004 27 "Generic.Magpouch" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 72 "Arccw_FAS2_Weapon_SKS.InsertLast" }
+	{ event 5004 72 "Generic.Cloth_Movement" }
+	{ event 5004 86 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 86 "Generic.Cloth_Movement" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 97 "Generic.Cloth_Movement" }
+	{ event 5004 102 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -615,38 +568,23 @@ $sequence "Reload7" {
 }
 
 $sequence "Reload8" {
-	"sks_anims\Reload8.smd"
+	"sks_anims\ReloadNew8.smd"
 	activity "ACT_VM_RELOAD8" 1
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 19 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 20 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 21 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 21 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 22 "sks_round2" }
-	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
-	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
-	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 63 "Generic.Cloth_Movement" }
-	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
-	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
-	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
-	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
-	{ event 5004 164 "Generic.Cloth_Movement" }
-	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Generic.Cloth_Movement" }
+	{ event 5004 27 "Generic.Magpouch" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 72 "Arccw_FAS2_Weapon_SKS.InsertLast" }
+	{ event 5004 72 "Generic.Cloth_Movement" }
+	{ event 5004 86 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 86 "Generic.Cloth_Movement" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 97 "Generic.Cloth_Movement" }
+	{ event 5004 102 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -667,24 +605,24 @@ $sequence "Reload9" {
 	{ event AE_FAS_EJECT_BRASS 71 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 155 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_SKS.LatchOpen" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 14 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.LatchClose" }
+	{ event 5004 34 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 63 "Weapon_SKS.BoltBack" }
-	{ event 5004 70 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 63 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 70 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 63 "Generic.Cloth_Movement" }
 	{ event 5004 81 "Generic.Magpouch" }
-	{ event 5004 93 "Weapon_SKS.ClipIn" }
+	{ event 5004 93 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 93 "Generic.Cloth_Movement" }
-	{ event 5004 109 "Weapon_SKS.Insert1" }
-	{ event 5004 124 "Weapon_SKS.Insert2" }
-	{ event 5004 136 "Weapon_SKS.InsertLast" }
+	{ event 5004 109 "Arccw_FAS2_Weapon_SKS.Insert1" }
+	{ event 5004 124 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 136 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 136 "Generic.Cloth_Movement" }
-	{ event 5004 153 "Weapon_SKS.RemoveClip" }
+	{ event 5004 153 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 153 "Generic.Cloth_Movement" }
-	{ event 5004 164 "Weapon_SKS.BoltRelease" }
-	{ event 5004 169 "Weapon_SKS.BoltForward" }
+	{ event 5004 164 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 169 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 164 "Generic.Cloth_Movement" }
 	{ event 3018 172 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -699,14 +637,14 @@ $sequence "Reload_empty_nmc" {
 	{ event AE_FAS_EJECT_BRASS 61 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 6 "Generic.Magpouch" }
-	{ event 5004 21 "Weapon_SKS.ClipIn" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 21 "Generic.Cloth_Movement" }
-	{ event 5004 37 "Weapon_SKS.InsertNomen" }
+	{ event 5004 37 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 37 "Generic.Cloth_Movement" }
-	{ event 5004 57 "Weapon_SKS.RemoveClip" }
+	{ event 5004 57 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 57 "Generic.Cloth_Movement" }
-	{ event 5004 68 "Weapon_SKS.BoltRelease" }
-	{ event 5004 72 "Weapon_SKS.BoltForward" }
+	{ event 5004 68 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 72 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 68 "Generic.Cloth_Movement" }
 	{ event 3018 74 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -722,17 +660,17 @@ $sequence "Reload1_nmc" {
 	{ event AE_FAS_EJECT_BRASS 72 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 10 "Generic.Magpouch" }
-	{ event 5004 18 "Weapon_SKS.BoltBack" }
-	{ event 5004 25 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 25 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 18 "Generic.Cloth_Movement" }
-	{ event 5004 34 "Weapon_SKS.ClipIn" }
+	{ event 5004 34 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 34 "Generic.Cloth_Movement" }
-	{ event 5004 49 "Weapon_SKS.InsertNomen" }
+	{ event 5004 49 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 49 "Generic.Cloth_Movement" }
-	{ event 5004 68 "Weapon_SKS.RemoveClip" }
+	{ event 5004 68 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 68 "Generic.Cloth_Movement" }
-	{ event 5004 78 "Weapon_SKS.BoltRelease" }
-	{ event 5004 82 "Weapon_SKS.BoltForward" }
+	{ event 5004 78 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 78 "Generic.Cloth_Movement" }
 	{ event 3018 84 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -748,20 +686,20 @@ $sequence "Reload2_nmc" {
 	{ event AE_FAS_EJECT_BRASS 33 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 87 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_SKS.BoltBack" }
-	{ event 5004 17 "Weapon_SKS.BoltForward" }
-	{ event 5004 25 "Weapon_SKS.BoltBack" }
-	{ event 5004 32 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 17 "Arccw_FAS2_Weapon_SKS.BoltForward" }
+	{ event 5004 25 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 32 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 25 "Generic.Cloth_Movement" }
 	{ event 5004 42 "Generic.Magpouch" }
-	{ event 5004 51 "Weapon_SKS.ClipIn" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 51 "Generic.Cloth_Movement" }
-	{ event 5004 66 "Weapon_SKS.InsertNomen" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 66 "Generic.Cloth_Movement" }
-	{ event 5004 83 "Weapon_SKS.RemoveClip" }
+	{ event 5004 83 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 83 "Generic.Cloth_Movement" }
-	{ event 5004 93 "Weapon_SKS.BoltRelease" }
-	{ event 5004 97 "Weapon_SKS.BoltForward" }
+	{ event 5004 93 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 93 "Generic.Cloth_Movement" }
 	{ event 3018 99 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -778,22 +716,22 @@ $sequence "Reload3_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -811,22 +749,22 @@ $sequence "Reload4_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -845,22 +783,22 @@ $sequence "Reload5_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -880,22 +818,22 @@ $sequence "Reload6_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -916,22 +854,22 @@ $sequence "Reload7_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -953,22 +891,22 @@ $sequence "Reload8_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -991,22 +929,22 @@ $sequence "Reload9_nmc" {
 	{ event AE_FAS_EJECT_BRASS 67 "sks_round1" }
 	{ event AE_FAS_EJECT_BRASS 110 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_SKS.LatchOpen" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_SKS.LatchOpen" }
 	{ event 5004 11 "Generic.Cloth_Movement" }
-	{ event 5004 23 "Weapon_SKS.LatchClose" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_SKS.LatchClose" }
 	{ event 5004 23 "Generic.Cloth_Movement" }
 	{ event 5004 49 "Generic.Magpouch" }
-	{ event 5004 59 "Weapon_SKS.BoltBack" }
-	{ event 5004 66 "Weapon_SKS.BoltBackLock" }
+	{ event 5004 59 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
 	{ event 5004 59 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.ClipIn" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 74 "Generic.Cloth_Movement" }
-	{ event 5004 90 "Weapon_SKS.InsertNomen" }
+	{ event 5004 90 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 90 "Generic.Cloth_Movement" }
-	{ event 5004 107 "Weapon_SKS.RemoveClip" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 107 "Generic.Cloth_Movement" }
-	{ event 5004 116 "Weapon_SKS.BoltRelease" }
-	{ event 5004 120 "Weapon_SKS.BoltForward" }
+	{ event 5004 116 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 120 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 116 "Generic.Cloth_Movement" }
 	{ event 3018 122 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -1022,27 +960,27 @@ $sequence "Reload_20_empty" {
 	{ event AE_FAS_EJECT_BRASS 176 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 7 "Generic.Magpouch" }
-	{ event 5004 24 "Weapon_SKS.ClipIn" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 24 "Generic.Cloth_Movement" }
-	{ event 5004 39 "Weapon_SKS.Insert1" }
+	{ event 5004 39 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 39 "Generic.Cloth_Movement" }
-	{ event 5004 54 "Weapon_SKS.Insert2" }
-	{ event 5004 66 "Weapon_SKS.InsertLast" }
+	{ event 5004 54 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 66 "Generic.Cloth_Movement" }
-	{ event 5004 82 "Weapon_SKS.RemoveClip" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 82 "Generic.Cloth_Movement" }
 	{ event 5004 102 "Generic.Magpouch" }
-	{ event 5004 113 "Weapon_SKS.ClipIn" }
+	{ event 5004 113 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 113 "Generic.Cloth_Movement" }
-	{ event 5004 130 "Weapon_SKS.Insert1" }
+	{ event 5004 130 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 130 "Generic.Cloth_Movement" }
-	{ event 5004 144 "Weapon_SKS.Insert2" }
-	{ event 5004 156 "Weapon_SKS.InsertLast" }
+	{ event 5004 144 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 156 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 156 "Generic.Cloth_Movement" }
-	{ event 5004 172 "Weapon_SKS.RemoveClip" }
+	{ event 5004 172 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 172 "Generic.Cloth_Movement" }
-	{ event 5004 184 "Weapon_SKS.BoltRelease" }
-	{ event 5004 189 "Weapon_SKS.BoltForward" }
+	{ event 5004 184 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 189 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 189 "Generic.Cloth_Movement" }
 	{ event 3018 199 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -1057,21 +995,21 @@ $sequence "Reload_20_empty_nmc" {
 	{ event AE_FAS_EJECT_BRASS 129 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 9 "Generic.Magpouch" }
-	{ event 5004 19 "Weapon_SKS.ClipIn" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 19 "Generic.Cloth_Movement" }
-	{ event 5004 36 "Weapon_SKS.InsertNomen" }
+	{ event 5004 36 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 36 "Generic.Cloth_Movement" }
-	{ event 5004 60 "Weapon_SKS.RemoveClip" }
+	{ event 5004 60 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 60 "Generic.Cloth_Movement" }
 	{ event 5004 77 "Generic.Magpouch" }
-	{ event 5004 87 "Weapon_SKS.ClipIn" }
+	{ event 5004 87 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 87 "Generic.Cloth_Movement" }
-	{ event 5004 103 "Weapon_SKS.InsertNomen" }
+	{ event 5004 103 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
 	{ event 5004 103 "Generic.Cloth_Movement" }
-	{ event 5004 125 "Weapon_SKS.RemoveClip" }
+	{ event 5004 125 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 5004 125 "Generic.Cloth_Movement" }
-	{ event 5004 136 "Weapon_SKS.BoltRelease" }
-	{ event 5004 141 "Weapon_SKS.BoltForward" }
+	{ event 5004 136 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 141 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 141 "Generic.Cloth_Movement" }
 	{ event 3018 146 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -1084,18 +1022,18 @@ $sequence "Reload_20_add" {
 	activity "ACT_VM_RELOAD_20_ADD" 1
 	{ event AE_FAS_EJECT_BRASS 91 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 9 "Weapon_SKS.BoltBackHalfA" }
+	{ event 5004 9 "Arccw_FAS2_Weapon_SKS.BoltBackHalfA" }
 	{ event 5004 30 "Generic.Cloth_Movement" }
 	{ event 5004 31 "Generic.Magpouch" }
-	{ event 5004 36 "Weapon_SKS.BoltBackHalfB" }
-	{ event 5004 40 "Weapon_SKS.ClipIn" }
-	{ event 5004 58 "Weapon_SKS.Insert1" }
+	{ event 5004 36 "Arccw_FAS2_Weapon_SKS.BoltBackHalfB" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_SKS.ClipIn" }
+	{ event 5004 58 "Arccw_FAS2_Weapon_SKS.Insert1" }
 	{ event 5004 58 "Generic.Cloth_Movement" }
-	{ event 5004 69 "Weapon_SKS.Insert2" }
-	{ event 5004 76 "Weapon_SKS.InsertLast" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_SKS.Insert2" }
+	{ event 5004 76 "Arccw_FAS2_Weapon_SKS.InsertLast" }
 	{ event 5004 76 "Generic.Cloth_Movement" }
-	{ event 5004 87 "Weapon_SKS.RemoveClip" }
-	{ event 5004 92 "Weapon_SKS.BoltForwardHalf" }
+	{ event 5004 87 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
+	{ event 5004 92 "Arccw_FAS2_Weapon_SKS.BoltForwardHalf" }
 	{ event 5004 92 "Generic.Cloth_Movement" }
 	{ event 3018 102 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -1109,13 +1047,13 @@ $sequence "Reload_20_add_nmc" {
 	{ event AE_FAS_EJECT_BRASS 76 "sks_clip" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
 	{ event 5004 9 "Generic.Magpouch" }
-	{ event 5004 21 "Weapon_SKS.BoltBackHalfA" }
-	{ event 5004 30 "Weapon_SKS.ClipIn" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_SKS.BoltBackHalfA" }
+	{ event 5004 30 "Arccw_FAS2_Weapon_SKS.ClipIn" }
 	{ event 5004 30 "Generic.Cloth_Movement" }
-	{ event 5004 46 "Weapon_SKS.InsertNomen" }
-	{ event 5004 58 "Weapon_SKS.BoltForwardHalf" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_SKS.InsertNomen" }
+	{ event 5004 58 "Arccw_FAS2_Weapon_SKS.BoltForwardHalf" }
 	{ event 5004 58 "Generic.Cloth_Movement" }
-	{ event 5004 70 "Weapon_SKS.RemoveClip" }
+	{ event 5004 70 "Arccw_FAS2_Weapon_SKS.RemoveClip" }
 	{ event 3018 75 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
 	fadeout 0.2
@@ -1127,15 +1065,15 @@ $sequence "Reload_30" {
 	activity "ACT_VM_RELOAD_30" 1
 	{ event AE_FAS_EJECT_BRASS 25 "sks_round1" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_SKS.BoltBack" }
-	{ event 5004 24 "Weapon_SKS.BoltBackLock" }
-	{ event 5004 21 "Weapon_SKS.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_SKS.BoltBack" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_SKS.BoltBackLock" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_SKS.MagOut" }
 	{ event 5004 21 "Generic.Cloth_Movement" }
 	{ event 5004 51 "Generic.Magpouch" }
-	{ event 5004 71 "Weapon_SKS.MagIn" }
+	{ event 5004 71 "Arccw_FAS2_Weapon_SKS.MagIn" }
 	{ event 5004 71 "Generic.Cloth_Movement" }
-	{ event 5004 78 "Weapon_SKS.BoltRelease" }
-	{ event 5004 81 "Weapon_SKS.BoltForward" }
+	{ event 5004 78 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
+	{ event 5004 81 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 5004 81 "Generic.Cloth_Movement" }
 	{ event 3018 91 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
@@ -1148,14 +1086,14 @@ $sequence "Reload_30_nmc" {
 	activity "ACT_VM_RELOAD_30_NOMEN" 1
 	{ event AE_FAS_EJECT_BRASS 14 "sks_round1" }
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_SKS.BoltBack" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_SKS.BoltBack" }
 	{ event 5004 19 "Generic.Cloth_Movement" }
-	{ event 5004 26 "Weapon_SKS.MagOut" }
+	{ event 5004 26 "Arccw_FAS2_Weapon_SKS.MagOut" }
 	{ event 5004 26 "Generic.Cloth_Movement" }
 	{ event 5004 48 "Generic.Magpouch" }
-	{ event 5004 58 "Weapon_SKS.MagIn" }
+	{ event 5004 58 "Arccw_FAS2_Weapon_SKS.MagIn" }
 	{ event 5004 58 "Generic.Cloth_Movement" }
-	{ event 5004 76 "Weapon_SKS.BoltForward" }
+	{ event 5004 76 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 3018 81 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
 	fadeout 0.2
@@ -1166,14 +1104,14 @@ $sequence "Reload_30_empty" {
 	"sks_anims\Reload_30_empty.smd"
 	activity "ACT_VM_RELOAD_30_EMPTY" 1
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 24 "Weapon_SKS.MagOutEmpty" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_SKS.MagOutEmpty" }
 	{ event 5004 24 "Generic.Cloth_Movement" }
 	{ event 5004 43 "Generic.Magpouch" }
-	{ event 5004 61 "Weapon_SKS.MagIn" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_SKS.MagIn" }
 	{ event 5004 61 "Generic.Cloth_Movement" }
-	{ event 5004 97 "Weapon_SKS.BoltRelease" }
+	{ event 5004 97 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
 	{ event 5004 97 "Generic.Cloth_Movement" }
-	{ event 5004 101 "Weapon_SKS.BoltForward" }
+	{ event 5004 101 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 3018 111 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
 	fadeout 0.2
@@ -1184,14 +1122,14 @@ $sequence "Reload_30_empty_nmc" {
 	"sks_anims\Reload_30_empty_nmc.smd"
 	activity "ACT_VM_RELOAD_30_EMPTY_NOMEN" 1
 	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 13 "Weapon_SKS.MagOutEmpty" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SKS.MagOutEmpty" }
 	{ event 5004 19 "Generic.Cloth_Movement" }
 	{ event 5004 31 "Generic.Magpouch" }
-	{ event 5004 50 "Weapon_SKS.MagIn" }
+	{ event 5004 50 "Arccw_FAS2_Weapon_SKS.MagIn" }
 	{ event 5004 50 "Generic.Cloth_Movement" }
-	{ event 5004 70 "Weapon_SKS.BoltRelease" }
+	{ event 5004 70 "Arccw_FAS2_Weapon_SKS.BoltRelease" }
 	{ event 5004 70 "Generic.Cloth_Movement" }
-	{ event 5004 74 "Weapon_SKS.BoltForward" }
+	{ event 5004 74 "Arccw_FAS2_Weapon_SKS.BoltForward" }
 	{ event 3018 79 "AE_WPN_INCREMENTAMMO" }
 	fadein 0.2
 	fadeout 0.2
