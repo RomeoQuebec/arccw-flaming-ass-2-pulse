@@ -1,0 +1,10 @@
+//
+//ALL UPDATES ARE MADE BY ORGANNER
+//FOR THE EU/RU SERVER: http://discord.gg/NXYypCQ
+//
+"CSO2Generic"
+
+{
+	"$basetexture"	"models\weapons\v_models\pist_m93r_sa2\Pistol_M93R_000_D"
+	"$bumpmap" "models\weapons\v_models\pist_m93r_sa2\Pistol_M93R_000_N"
+}

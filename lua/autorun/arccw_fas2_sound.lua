@@ -142,7 +142,48 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/m82/harrisbipod_up1.wav","weapons/arccw_mifl/fas2/m82/harrisbipod_up2.wav"}
 })
+//SKS
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.MagOut",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_magout.wav"}
+})
 
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.MagOutEmpty",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.MagIn",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.MagInPartial",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_magin_partial.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.SlideRelease",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_sliderelease.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_OTs33.SlideBack",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ots33//ots33_slideback.wav"}
+})
 //SKS
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_SKS.LatchOpen",

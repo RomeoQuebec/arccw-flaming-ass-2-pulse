@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\arccw_fas2\ots33\EFT_PPSH_Mag35_D"
+	"$bumpmap" "models\weapons\arccw_fas2\ots33\EFT_PPSH_Mag35_N"
+	"$phongexponenttexture" "models\weapons\arccw_fas2\ots33\EFT_PPSH_Mag35_E"
+
+	"$phong" "1"
+	"$phongboost" "10"
+	"$phongalbedotint" "1"
+	//"$phongexponent" "10"
+	"$phongfresnelranges" "[1 5 22.5]"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.1 0.1 0.1]"
+	"$envmapfresnel" "0.1"
+	"$normalmapalphaenvmapmask" "0"
+	"$basemapalphaenvmapmask" "1"
+}
