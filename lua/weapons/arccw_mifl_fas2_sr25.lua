@@ -220,6 +220,7 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 3},
         },
     },
+    ["wepcamo-desert"]		= { VMSkin = 1 },
 }
 
 SWEP.ExtraSightDist = 10
@@ -281,8 +282,18 @@ SWEP.Attachments = {
             vpos = Vector(12, 0.5, 0),
             vang = Angle(0, 0, -90)
         },
-        MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_sr25_barrel_k"}
+        MergeSlots = {6},
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_k"},
+    },
+    {
+        PrintName = "Grip Corrector",
+        Slot = "corrector",
+        Bone = "Dummy01",
+        Offset = {
+            vpos = Vector(12, -1, -0.7),
+            vang = Angle(0, 0, -90)
+        },
+        Installed = "rq_fas2_grip_corrector"
     },
     {
         PrintName = "INTEG-UBGL",
@@ -330,6 +341,12 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = {"go_perk", "perk_fas2"}
+    },
+    {
+        PrintName = "FA:S1 mode?",
+        DefaultAttName = "No.",
+        Slot = "FAS2_wepcamo",
+        FreeSlot = true,
     },
     {
         PrintName = "Charm",

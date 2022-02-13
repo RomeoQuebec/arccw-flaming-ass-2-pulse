@@ -643,7 +643,17 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         --InstalledEles = {"rail_b"},		
-        MergeSlots = {5}
+        MergeSlots = {6}
+    },
+    {
+        PrintName = "Grip Corrector",
+        Slot = "corrector",
+        Bone = "ak_frame",
+        Offset = {
+            vpos = Vector(0, 15, 1.5),
+            vang = Angle(90, -90, -90),
+        },
+        Installed = "rq_fas2_grip_corrector"		
     },
     {
         PrintName = "INTEG-UBGL",

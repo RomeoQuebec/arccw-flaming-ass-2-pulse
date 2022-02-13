@@ -170,6 +170,11 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 6, bg = 2}},
 		Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/flet.mdl"			
     },	
+    ["go_ammo_sg_blackshot"] = {
+        VMBodygroups = {{ind = 6, bg = 3}},
+		Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/slug.mdl"			
+    },	
+    ["wepcamo-desert"]		= { VMSkin = 1 },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -209,6 +214,16 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         InstalledEles = {"ubrms"},
+    },
+    {
+        PrintName = "Grip Corrector",
+        Slot = "corrector",
+        Bone = "Bone29",
+        Offset = {
+            vpos = Vector(6, -0.1, 0),
+            vang = Angle(0, 0, -90),
+        },
+        Installed = "rq_fas2_grip_corrector"
     },
     {
         PrintName = "Tactical",
@@ -267,6 +282,12 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = "go_perk"
+    },
+    {
+        PrintName = "FA:S1 mode?",
+        DefaultAttName = "No.",
+        Slot = "FAS2_wepcamo",
+        FreeSlot = true,
     },
     {
         PrintName = "Charm",

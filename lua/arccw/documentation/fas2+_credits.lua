@@ -1,130 +1,50 @@
-[Created by slogkot, TheOnly8Z and Fesiug]
-[Ask me(slogkot) if you want to reuse some of these custom assets)
+[Created by Arqu and Zenith]
+[Fuck this, Im going to write some fanfic outline in here]
 
 
 
 /*
---- to the 5 people that decompiled this mod for whatever reason and read this
---- please dont fucking make cheaty attachment or anything like that
---- thank you very much
---- these models are SUPER destructive so even if you want to use them just be aware of shit like hard cut, trianglified n-gon and very very bad bevels 
+The Commanders' Deadline
 
+The three(maybe four, idk) commanders
 
---- look ight these nibbas dont really give specific credits ---
-MP7 (ironsight for the roni) - Shumung/The_tub
-https://gamebanana.com/skins/19741
+OG SKK > Idk, he tries to retire after G&K disolution
 
-PSG-1 - fallschirmjager/Sproily
-https://gamebanana.com/skins/105609
+ >He was abducted by two sexy dolls in an alleway and was forced to join the G&K PMC at gunpoint as a commander. (lol)
 
-SAF KIT - ???
---- i dont even remember where i got it from ---
+ >Several escape attempts were made until he found out about Ribeyrolles and fell in love with her.
 
-VOLKED KIT - ???
-http://gamer-lab.com/eng/mdl_source/X-90
+ >Gelatine doesn't want Ribey to get handled by a slavic man so she tells OG SKK thinks that it's fucked up to have sex 
+  with a doll that looks like a quadraplegic patient and needs to avoid contact with her.
 
-M16A1 - ???
-https://gamebanana.com/skins/19381
+ >OG SKK doesn't like this
 
----------------------------------------------------------------
-In Depth Credits
-slogkot (Fluffy Mammal)
--model hacks
--anims edits
--mag related anims
--g36 ociw hybrid thing anim
--MASS26 anim
--akimbo anim
--shotgun fired shells
--underbarrel stuff
--sr25 new reload animation
--horrible icons render/drawing (im not a fucking graphic designer mmkay?)
+Gelatine SKK > Gentiane, SKK of Lunasia clones > Gentiane, leader of the New Frankks Legion > Gentiane, the lone french mercenary
 
-Fesiug
--akimbo (barely works but ok)
--rewriting nomen -- also break it
--damped burst
--spawnicon
--qci
--tritium
--white deagle
--shell loading ubgl
+ >She joined the company in search of fame and power.
 
-TheOnly8Z
--clean up crew
--rebalance 
--naming system
--lotsa coding
--m79 grenades 
--text
--the cooler akimbo (still in pre pre pre alpha)
--stuff
+ >Did all sorts of stuff to climb up the ladder from bribing to sexual favours
 
+ >Has a powerful army composed of only french T-Dolls
 
+ >Doesn't want anyone touching her army to keep the pure french blood intact
 
-Tripwire (Killing Floor 2) --- very naisu
--HEAT Barrel (M16)
--EOD Barrel (MP5) 
--10mm Mag (MP5) 
--Thompson Kit
--UMP45 (MP5) 
--RIS Mount (Mac11)
--G18c/G17 Slide
--Glock Stock
--M3 parts
--M203
+Raiden from MGS2 SKK > Raiden from MGS2 SKK (GFL2)
 
-Infinity Ward / Beenox / Treyarch 
--9mm Adaptor (AUG, MW19)
--Pistol Rail(Glock, MW2)
--Raptor Kit (Raffica, MW2CR)
--Single Drum Mag (Fennec, MW19)
--Jungle Wraps (R700 and M21, MWR)
--AN94 parts (BO3/MW19)
--Kastet (Ghost)
--Suppressed sound and firing sound for calibre conversion (Mostly MW19, Cold War)
+ >He thought that having an army of killing machines would be cool and edgy.
 
-Crytek (Warface)
--Roni Frame
--AS Val 
--FO12
+key points: 
 
-DICE 
--M26 (BF4)
--SAIGA 12 (BF3)
--XM25 (BF4)
+Gentiane being a whore
+Raiden being edgy
+OG SKK loves Ribeyrolles
+Raiden vs. UMP45 (Anti-family vs. Family)
+Ribey gets absolutely annihilated by a KCCO bombing while chilling at a hospital
+OG SKK breaks
+Gentiane betrays G&K and joins NYTOs then turns into Not Morridow
+Gentiane vs. SEX KINK KUNT (OG SKK)
+"NOT YET SNAKE" Gentiane comes back and chases OG SKK and Raiden like in MGS3
 
-Saber Interactive (AVA) -- quite ebin assets ngl
--Felin (+big ass scope) -- look i dont fucking know if this is from ava or wwz, the fucker doesnt really specify but if i have to guess its ava cuz the poo texture
-
-BlackSpot Entertainment (Line of Sight)
--MP5 Swordfish
-
-They Hunger -- pretty sure its they hunger 
--TOZ34
-
-Magmacow
--alot of sounds 
-
-4A Games
--Revolver Sniper (Metro 2033/or was it last light? idk)
-
-FA:S2 
--your guess is as good as mine
-
-Google Images
--very naisu referance 
-
-
-[Assets Ripper] -- everyone deserves a place 
--Fesiug (MW2 rip)
--Stefano (MW2CR rip)
--Dr Gordon Freeman (MW19,MWR rip)
--Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
--HK G41/empty (ava, warface, wwz rip, pretty sure these two are the same)
--ClearSkyC (warface rip)
--Moon (BF4 rip)
----probably miss someone
 
 */
 
@@ -164,7 +84,7 @@ FS2R was designed on these pillar in order
 -Brainless Fun
 -"Im the best fucker in the world"
 
-in addition to that this was made to hone my skill in editing of animation, models and topology 
+in addition to that this was made to hone my skill in editing of animation, models and topolOG y 
 
 The ART side of things:
 this is how you get people to use your shit in the first place, fucking visual, be it animation (which i do not have controls over in this one) and how it looks      
@@ -298,4 +218,4 @@ https://youtu.be/sVntwsrjNe4?t=1603
 
 
 
-slogkot is a referance to rainworld dumbass 
+slOG kot is a referance to rainworld dumbass 

@@ -286,8 +286,18 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        MergeSlots = {5},
+        MergeSlots = {6},
         ExcludeFlags = {"mifl_fas2_g3_hg_k"},
+    },
+    {
+        PrintName = "Grip Corrector",
+        Slot = "corrector",
+        Bone = "stock",
+        Offset = {
+            vpos = Vector(20, -0.5, 0.7),
+            vang = Angle(0, 0, -90),
+        },
+        Installed = "rq_fas2_grip_corrector"
     },
     {
         PrintName = "INTEG-UBGL",

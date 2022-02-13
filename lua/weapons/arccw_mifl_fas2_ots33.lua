@@ -345,8 +345,18 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
+
+    local installed = wep.Attachments[4].Installed
+    local fast = wep.Attachments[8].Installed
+
     if table.HasValue(wep:GetActiveElements(), "mifl_fas2_ots33_mag_tok") then
         return anim .. "_tok"
+    end
+
+    if ( installed == "mifl_fas2_ots33_mag_tok" ) and ( fast == "mifl_fas2_perk_nomen" ) and anim == "reload_nomen" then
+        return "reload_nomen_tok"
+    elseif ( installed == "mifl_fas2_ots33_mag_tok" ) and ( fast == "mifl_fas2_perk_nomen" ) and anim == "reload_nomen_empty" then
+        return "reload_empty_nomen_tok"
     end
 end
 
@@ -446,7 +456,7 @@ SWEP.Animations = {
         LHIKOut = 0.6,
         LHIKEaseOut = 0.4,
     },
-    ["reload_nomen_empty_tok"] = {
+    ["reload_empty_nomen_tok"] = {
         Source = "Fast_Reload_Dry_Tok",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,

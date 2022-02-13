@@ -227,6 +227,16 @@ SWEP.Attachments = {
         InstalledEles = {"rail_bottom"},
     },
     {
+        PrintName = "Grip Corrector",
+        Slot = "corrector",
+        Bone = "pump",
+        Offset = {
+            vpos = Vector(10, 1.5, 2.4),
+            vang = Angle(0, 0, -90),
+        },
+        Installed = "rq_fas2_grip_corrector"
+    },
+    {
         PrintName = "Tactical",
         Slot = "tac",
         Bone = "pump",
